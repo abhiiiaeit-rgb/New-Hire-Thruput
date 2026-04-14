@@ -1,5 +1,39 @@
 <head>
   <title>Training Thruput Dashboard</title>
+  <!-- FILTER BAR -->
+<div class="filter-bar">
+
+  <div class="filter">
+    <label>🔍 Batch</label>
+    <select id="batchFilter">
+      <option>All</option>
+    </select>
+  </div>
+
+  <div class="filter">
+    <label>🏭 Process</label>
+    <select id="processFilter">
+      <option>All</option>
+    </select>
+  </div>
+
+  <div class="filter">
+    <label>👤 Trainer Name</label>
+    <select id="trainerFilter">
+      <option>All</option>
+    </select>
+  </div>
+
+  <div class="filter">
+    <label>📅 Month</label>
+    <select id="monthFilter">
+      <option>All</option>
+    </select>
+  </div>
+
+  <button onclick="resetFilters()" class="reset-btn">↺ Reset All</button>
+
+</div>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <style>
